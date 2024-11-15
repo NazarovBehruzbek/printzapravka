@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import Card from './components/card'; // Убедитесь, что путь к компоненту Card правильный
 import datafiles from './data/secondcategory'; // Импортируем данные с файлами
 
