@@ -84,7 +84,7 @@ export default function footerlayout() {
             <div className="flex  w-full justify-between mt-6">
               <h3>© 2022 "TAFAKKUR XIZMAT SAMARASI" MChJ</h3>
               <p className="text-[14px] font-extralight">
-                Creat By{" "}
+                Created By{" "}
                 <span className="text-[#a357ff] font-semibold">LIMSA</span>
               </p>
             </div>
