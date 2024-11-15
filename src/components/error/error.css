@@ -1,0 +1,59 @@
+/* Анимированный фон */
+.error-page {
+    background: linear-gradient(135deg, #1B2838, #2A3F54);
+    background-size: 200% 200%;
+    animation: bgMove 10s infinite linear;
+  }
+  
+  /* Анимация плавного движения фона */
+  @keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  
+  /* Появление контейнера с лёгким смещением */
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  .animate-slide-in {
+    animation: slideIn 1s ease forwards;
+  }
+  
+  /* Свечение для кода ошибки */
+  @keyframes glow {
+    0%, 100% { text-shadow: 0 0 10px #1B2838, 0 0 20px #1B2838, 0 0 30px #1B2838; }
+    50% { text-shadow: 0 0 20px #1B2838, 0 0 30px #1B2838, 0 0 40px #1B2838; }
+  }
+  .error-code {
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  /* Плавное появление текста с задержкой */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  .animate-fade-in {
+    animation: fadeIn 1.5s ease forwards;
+  }
+  .animate-fade-in.delay-1 {
+    animation-delay: 0.5s;
+  }
+  
+  /* Bounce-ин для кнопки */
+  @keyframes bounceIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    60% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+  }
+  .animate-bounce-in {
+    animation: bounceIn 0.8s ease forwards;
+  }
+  
