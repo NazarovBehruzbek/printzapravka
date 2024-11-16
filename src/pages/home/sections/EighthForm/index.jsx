@@ -52,14 +52,14 @@ export default function EighthForm() {
   return (
     <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-r from-[#1B2838] to-[#2A3F54] p-6">
       <div className="max-w-4xl w-full bg-gray-800 bg-opacity-80 shadow-lg rounded-xl p-8 md:p-12 transform transition duration-700 hover:scale-105 border border-gray-700">
-        
+
         <h2 className="text-4xl font-semibold text-center text-white mb-10 tracking-wider">
           Связаться с нами
         </h2>
 
         <form onSubmit={handleSubmit} className="grid md:grid-cols-2 gap-8">
           <div className="left flex flex-col space-y-6">
-            
+
             {/* Имя */}
             <div className="relative">
               <input
@@ -112,12 +112,15 @@ export default function EighthForm() {
 
           {/* Правая часть - Карта */}
           <div className="right bg-gray-700 bg-opacity-60 rounded-lg shadow-lg flex items-center justify-center">
+            <iframe
+              className="rounded-lg"
+              width="100%"
+              height="100%"
+              src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d5765.727072376834!2d69.279825!3d41.242401!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDE0JzMyLjYiTiA2OcKwMTYnNDcuNCJF!5e1!3m2!1sru!2s!4v1731646140513!5m2!1sru!2s"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
 
-            <iframe 
-             className="rounded-lg" 
-             width="100%" 
-             height="100%" 
-            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d5765.727072376834!2d69.279825!3d41.242401!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDE0JzMyLjYiTiA2OcKwMTYnNDcuNCJF!5e1!3m2!1sru!2s!4v1731646140513!5m2!1sru!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </form>
 
